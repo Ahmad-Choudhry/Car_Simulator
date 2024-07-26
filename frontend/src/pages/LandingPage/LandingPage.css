@@ -1,0 +1,124 @@
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif; /* Set Roboto as the default font family */
+}
+
+.landing-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 30px; /* Adjusted to shift everything to the right */
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  text-align: left; /* Align text to the left */
+}
+
+.content h1, .content h2 {
+  margin: 0;
+  opacity: 0; /* Make text initially invisible */
+  animation: slideInLeft 1s ease-in-out forwards; /* Add slide in animation to each heading */
+}
+
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: transparent; /* Make text transparent */
+  -webkit-text-stroke: 1px white; /* Add white outline */
+  animation-delay: 0.5s; /* Delay the second line for a staggered effect */
+}
+
+.content h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: transparent; /* Make text transparent */
+  -webkit-text-stroke: 1px white; /* Add white outline */
+}
+
+.button-container {
+  align-items: flex-start; /* Align buttons to the left */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.custom-button {
+  background-color: rgba(255, 255, 255, 0); /* More transparent white */
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 1); /* Thicker semi-transparent white border */
+  padding: 20px 40px; /* Larger padding for larger buttons */
+  cursor: pointer;
+  border-radius: 5px; /* Slightly rounded corners for a more box-like shape */
+  font-size: 20px; /* Larger font size */
+  font-family: 'Roboto', sans-serif; /* Better font */
+  font-weight: bold; /* Bold font */
+  margin: 10px 0; /* Add margin to stack buttons vertically */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  opacity: 0; /* Start with the button invisible */
+  animation: fadeInUp 1s ease-in-out forwards; /* Add fade-in animation */
+}
+
+.custom-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+  border-color: rgba(255, 255, 255, 0.6); /* Slightly more opaque border on hover */
+}
+
+.custom-button.secondary {
+  background-color: rgba(108, 117, 125, 0.2); /* More transparent gray */
+  border: 2px solid rgba(108, 117, 125, 0.6); /* Thicker semi-transparent gray border */
+}
+
+.custom-button.secondary:hover {
+  background-color: rgba(108, 117, 125, 0.3); /* Slightly more opaque on hover */
+  border-color: rgba(108, 117, 125, 0.8); /* Slightly more opaque border on hover */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); /* Start off-screen to the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End at the original position */
+  }
+}
