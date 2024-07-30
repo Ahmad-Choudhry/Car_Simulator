@@ -1,0 +1,32 @@
+.lineup-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  min-height: 100vh; /* Ensure the page covers the full viewport height */
+}
+
+.lineup-page h1 {
+  margin-bottom: 20px;
+  color: white; /* Ensure heading color is white */
+}
+
+.lineup-page ul {
+  list-style: none;
+  padding: 0;
+  width: 100%; /* Ensure the list takes full width */
+}
+
+.lineup-page li {
+  margin: 10px 0;
+  font-size: 18px;
+  background-color: #333; /* Set background color of box to greyish */
+  padding: 15px;
+  border-radius: 5px; /* Add some border radius for rounded corners */
+  width: 80%; /* Limit the width of the boxes */
+  max-width: 600px; /* Set a max-width for the boxes */
+  text-align: center; /* Center the text inside the boxes */
+  color: white; /* Ensure text color is white inside the boxes */
+}

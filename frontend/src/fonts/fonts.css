@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'PorscheNext';
+  src: url('./porsche-next.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PorscheNext';
+  src: url('./porsche-next-bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -7,11 +7,11 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleSignIn = () => {
-    // Handle sign in action
+    navigate('/auth');
   };
 
   const handleContinueAsGuest = () => {
-    navigate('/simulation');
+    navigate('/lineup');
   };
 
   return (

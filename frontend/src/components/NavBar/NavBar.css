@@ -1,0 +1,62 @@
+/* Navbar styles */
+.navbar {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure the navbar is on top */
+  }
+  
+  .navbar-title {
+    font-family: 'PorscheNext', sans-serif;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .navbar-title a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-icon, .user-icon {
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    background-color: black;
+    color: white;
+    border-right: 1px solid #555;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    margin: 10px 0;
+  }
+  
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'PorscheNext', sans-serif;
+  }
+  
+  .menu ul li a:hover {
+    text-decoration: underline;
+  }
+  

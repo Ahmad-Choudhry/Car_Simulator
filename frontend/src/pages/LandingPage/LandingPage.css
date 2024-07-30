@@ -10,7 +10,6 @@ body, html {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif; /* Set Roboto as the default font family */
 }
 
 .landing-page {
@@ -55,7 +54,7 @@ body, html {
 
 .content h2 {
   font-size: 48px;
-  margin-bottom: 30px;
+  margin-bottom: -5px;
   color: transparent; /* Make text transparent */
   -webkit-text-stroke: 1px white; /* Add white outline */
 }
@@ -78,7 +77,6 @@ body, html {
   cursor: pointer;
   border-radius: 5px; /* Slightly rounded corners for a more box-like shape */
   font-size: 20px; /* Larger font size */
-  font-family: 'Roboto', sans-serif; /* Better font */
   font-weight: bold; /* Bold font */
   margin: 10px 0; /* Add margin to stack buttons vertically */
   transition: background-color 0.3s ease, border-color 0.3s ease;

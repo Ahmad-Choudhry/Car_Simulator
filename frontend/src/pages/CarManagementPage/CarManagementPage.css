@@ -1,0 +1,37 @@
+.car-management-page {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    padding: 20px;
+    font-family: 'PorscheNext', sans-serif;
+  }
+  
+  .car-management-page h2 {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .car-management-page .car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .car-management-page .user-cars-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .car-management-page .user-cars-list li {
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

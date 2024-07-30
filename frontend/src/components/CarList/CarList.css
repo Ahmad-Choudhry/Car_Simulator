@@ -1,0 +1,42 @@
+/* Container for the car list */
+.car-list-container {
+    padding: 20px;
+    text-align: center;
+    font-family: 'PorscheNext', sans-serif;
+    color: white; /* Change text color to white */
+    background-color: black; /* Change background color to black */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+  }
+  
+  /* Heading styles */
+  .car-list-container h2 {
+    margin-bottom: 20px;
+    color: white; /* Ensure headings are white */
+  }
+  
+  /* Grid for base cars */
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 40px;
+  }
+  
+  /* List for user cars */
+  .user-cars-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .user-cars-list li {
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

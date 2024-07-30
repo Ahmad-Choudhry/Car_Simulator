@@ -1,0 +1,84 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light background color for the entire page */
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures any overflow is hidden */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  .auth-form {
+    flex: 0 0 30%; /* Takes 30% of the width */
+    background-color: #fafafa; /* Slightly off-white background */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 20px;
+    font-family: 'PorscheNext', sans-serif;
+  }
+  
+  .auth-form .error {
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .auth-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'PorscheNext', sans-serif;
+  }
+  
+  .auth-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'PorscheNext', sans-serif;
+  }
+  
+  .auth-form button:hover {
+    background-color: #555;
+  }
+  
+  .auth-form .signup-link {
+    margin-top: 20px;
+    font-family: 'PorscheNext', sans-serif;
+  }
+  
+  .auth-form .signup-link a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .auth-form .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
